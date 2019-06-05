@@ -274,6 +274,14 @@ public abstract class SiddhiStream {
             siddhiContext.setExtensions(environment.getExtensions());
             siddhiContext.setExecutionConfig(environment.getExecutionEnvironment().getConfig());
         }
+        
+        /**
+         * Return the SiddhiContext
+         * @return The Siddhi Operator context
+         */
+        public SiddhiOperatorContext getSiddhiContext() {
+          return this.siddhiContext;
+        }
 
         /**
          * @param outStreamId The <code>streamId</code> to return as data stream.
